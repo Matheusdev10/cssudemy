@@ -1,0 +1,100 @@
+/* position-fixed
+elemento fica fixo em uma mesma posição 
+
+position:relative( posiciona o elemento com base no canto superior esquerdo ( usa float > left ou rigth)
+
+position: absolute -- utiliza o canto superior esquerdo do elemento pai para se posicionar
+
+colocar negrito: font-weight: bold; 
+
+espaçamento entre linhas - line-height
+
+bottom é baixo ( rodapé)
+s
+
+se eu usar o seletor asterisco *{} eu seleciono a pagina inteira e isso é bom para zerar as margens de toda a página
+
+min-height: a medida quee eu vou colocando conteudo na página ela vai se ajustando
+
+float: faz tag ficar a esquerda ou direita
+porém toda vez que usar o float eu tenho que usar na tag de baixo clear:booth para que ela possa aparecer
+
+text-shadow: coloca sombra
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: helvetica, arial, sans-serif;
+}
+
+body {
+  background-color: #000000;
+}
+
+header {
+  background-color: #35b8b0;
+  height: 80px;
+
+  padding: 20px;
+}
+
+img {
+  height: 80px;
+  padding: 1px;
+}
+
+p {
+  color: white;
+  font-size: 20px;
+  text-shadow: 1px 1px 1px #111111;
+  padding: 40px 20px;
+}
+
+footer {
+  background-color: #35b8b0;
+  height: 50px;
+  text-align: center;
+  padding: 12px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+h1 {
+  color: #ff7f50;
+  text-align: center;
+  padding: 50px 0px 0px 0px;
+  text-shadow: 1px 1px 1px #111111;
+}
+
+#div_principal {
+  background-image: url(./assets/image.jpg);
+  background-size: 100%;
+  clear: both;
+  min-height: 400px;
+  padding: 100px 0 100px 0;
+
+  /* padding: 80px 0 0 0; */
+}
+#logo {
+  float: left;
+}
+#menu {
+  float: right;
+  margin-top: 30px;
+}
+#menu a {
+  text-decoration: none;
+  color: #111;
+  padding: 52px 20px;
+}
+#menu a:hover {
+  background-color: #111;
+  color: #35b8b0;
+  -webkit-transition: 0.5s;
+}
+
+.efeito {
+  background-color: rgba(0, 0, 0, 0.5);
+}
